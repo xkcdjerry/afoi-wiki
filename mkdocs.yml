@@ -21,8 +21,6 @@ nav:
     - 如何参与: intro/htc.md
     - 格式手册: intro/format.md
     - F.A.Q.: intro/faq.md
-    - 用 Docker 部署 OI Wiki: intro/docker-deploy.md
-    - 镜像站列表: intro/mirrors.md
     - 致谢: intro/thanks.md
   - 比赛相关:
     - 比赛相关简介: contest/index.md
@@ -476,8 +474,6 @@ nav:
     - RMQ: topic/rmq.md
     - 并查集应用: topic/dsu-app.md
     - 括号序列: topic/bracket.md
-  - 关于 Hulu:
-    -  关于 Hulu: intro/hulu.md
 
 # Theme
 theme:
@@ -504,19 +500,11 @@ theme:
 # Customization
 extra:
   search:
-    language: 'jp'
-  disqus: 'OI-Wiki'
+    language: 'zh'
+  disqus: 'AFOI-Wiki'
   copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
   pagetime: 'on'
   manifest: 'manifest.webmanifest'
-  githash: ''
-  # notice:
-  #   title: 'Hi'
-  #   message: '欢迎点击这里对 OI Wiki 提一点建议'
-  #   url: 'https://wj.qq.com/s2/4467592/b1e9'
-  #   position: 'topCenter'
-  #   progressBar: false
-  #   timeout: false
 
 extra_javascript:
   - '_static/js/extra.js?v=16'
