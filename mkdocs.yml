@@ -9,7 +9,6 @@ strict: false
 repo_name: 'AFOI-wiki/AFOI-wiki'
 repo_url: 'https://github.com/AFOI-wiki/AFOI-wiki'
 edit_uri: 'https://afoi-wiki.github.io/afoi-wiki/edit-landing/?ref='
-base_url: 'https://afoi-wiki.github.io/afoi-wiki/'
 
 # Contents
 nav:
