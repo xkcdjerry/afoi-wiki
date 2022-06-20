@@ -1,6 +1,6 @@
 disqus:
 pagetime:
-title: OI Wiki
+title: AFOI Wiki
 
 # 欢迎来到 **AFOI Wiki**！[![GitHub watchers](https://img.shields.io/github/watchers/AFOI-wiki/afoi-wiki.svg?style=social&label=Watch)](https://github.com/AFOI-wiki/afoi-wiki)  [![GitHub stars](https://img.shields.io/github/stars/AFOI-wiki/afoi-wiki.svg?style=social&label=Stars)](https://github.com/AFOI-wiki/afoi-wiki)
 
