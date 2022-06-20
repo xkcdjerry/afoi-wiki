@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    name: OI-wiki Offline Test
+    name: AFOI-wiki Offline Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
