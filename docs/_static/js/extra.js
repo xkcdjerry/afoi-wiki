@@ -40,7 +40,7 @@ function foo(response) {
     var ti = t.toLocaleDateString('zh-CN', { timeZone: "Asia/Shanghai", hour12: false }) + " " + t.toLocaleTimeString('zh-CN', { timeZone: "Asia/Shanghai", hour12: false });
 
     var author_list = document.getElementsByClassName('page_contributors')[0].innerHTML.split(', ');
-    author_list = author_list.filter((e) => { return e != 'OI-wiki' })
+    author_list = author_list.filter((e) => { return e != 'AFOI-wiki' })
     for (var i = 0; i < num; ++i) {
       author_list.push(data[i].author.login);
     }

@@ -3,8 +3,8 @@ set -euo pipefail
 # Push HTML files to gh-pages automatically.
 
 # Fill this out with the correct org/repo
-ORG=24OI
-REPO=OI-wiki
+ORG=AFOI
+REPO=AFOI-wiki
 # This probably should match an email for one of your users.
 EMAIL=sirius.caffrey@gmail.com
 INSTALL_THEME='./scripts/install_theme.sh'

@@ -5,7 +5,7 @@
   %} {% endif %}
 {% set copyright = config.extra.copyright %} {% if page and page.meta and page.meta.copyright is string %} {% set copyright = page.meta.copyright
   %} {% endif %}
-{% set authors = 'OI-wiki' %} {% if page and page.meta and page.meta.author is string %} {% set authors = page.meta.author
+{% set authors = 'AFOI-wiki' %} {% if page and page.meta and page.meta.author is string %} {% set authors = page.meta.author
   %} {% endif %}
 {% if not page.is_homepage and disqus %}
 {% set pageID = page.title | default("404", true) %}

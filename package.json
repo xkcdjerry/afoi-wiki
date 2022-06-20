@@ -1,5 +1,5 @@
 {
-  "name": "oi-wiki",
+  "name": "afoi-wiki",
   "version": "1.0.0",
   "description": "wiki for OI / ACM-ICPC",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OI-wiki/OI-wiki.git"
+    "url": "git+https://github.com/AFOI-wiki/afoi-wiki.git"
   },
   "keywords": [
     "OI",
@@ -21,9 +21,9 @@
   "author": "OI Wiki Team",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/OI-wiki/OI-wiki/issues"
+    "url": "https://github.com/AFOI-wiki/afoi-wiki/issues"
   },
-  "homepage": "https://github.com/OI-wiki/OI-wiki#readme",
+  "homepage": "https://github.com/AFOI-wiki/afoi-wiki#readme",
   "dependencies": {
     "bluebird": "^3.7.2",
     "chalk": "^4.1.0",
