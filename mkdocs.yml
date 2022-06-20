@@ -17,9 +17,10 @@ copyright: 'Copyright &copy; 2016 - 2022 AFOI Wiki Team'
 nav:
   - 简介:
     - Getting Started: index.md
-  - 这是一个一级分类:
-    - 这是一个二级分类:
-      - 这是一个md: test/test.md
+  - 数学:
+    - 万能欧几里得算法: math/useful_euclidean.md
+    - 拉格朗日反演: math/lagrange_inv.md
+    - FWT: math/fwt.md
 
 # Theme
 theme:
