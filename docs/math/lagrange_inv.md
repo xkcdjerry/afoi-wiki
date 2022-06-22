@@ -28,7 +28,7 @@ $$
 
 上面这两个问题的答案是相等的，其生成函数为 $F(x)=x(F(x)+1)^k$，考虑如何求出其第 $n$ 项。
 
-移项得 $x=\frac{F(x)}{(F(x)+1)^k}$，所以我们知道，$F(x)$ 的复合逆为 $G(x)=\frac{x}{(x+1)^k}$，根据拉格朗日反演，我们可以得到，$[x^n] F(x)=\frac 1n[x^{n-1}] (\frac{x}{G(x)})^n=\frac{1}n[x^{n-1}] (x+1)^{kn}=\frac 1n\binom{kn}{n-1}$。
+移项得 $x=\dfrac{F(x)}{(F(x)+1)^k}$，所以我们知道，$F(x)$ 的复合逆为 $G(x)=\dfrac{x}{(x+1)^k}$，根据拉格朗日反演，我们可以得到，$[x^n] F(x)=\frac 1n[x^{n-1}] (\dfrac{x}{G(x)})^n=\dfrac{1}n[x^{n-1}] (x+1)^{kn}=\dfrac1n\binom{kn}{n-1}$。
 
 ### ABC222H
 
@@ -37,7 +37,7 @@ $$
 - 每个点上写有 $0$ 或者 $1$，总和为 $n$。
 - 每个叶子写有 $1$。
 - 可以通过 $n-1$ 次下面的操作，使得根节点权值为 $n$：
-  - 选择两个节点 $u,v$，$v$ 必须是 $u$ 的儿子，或者 $u$ 的儿子的儿子。令 $a_u\larr a_u+a_v,a_v\larr 0$。
+  - 选择两个节点 $u,v$，$v$ 必须是 $u$ 的儿子，或者 $u$ 的儿子的儿子。令 $a_u\leftarrow a_u+a_v,a_v\leftarrow 0$。
 
 $n\le 10^7$。
 
@@ -45,7 +45,7 @@ $n\le 10^7$。
 
 答案的生成函数为 $F(x)=x(F(x)^2+3F(x)+1)^2$，即考虑根的一个儿子子树形如什么，可以为空（$1$），可以是一个好树（$F(x)$），可以是 $0$ 的某个儿子挂了一个好树（$2F(x)$），可以是 $0$ 的两个儿子都是好树（$F(x)^2$）。
 
-移项得到 $x=\frac{F(x)}{(F(x)^2+3F(x)+1)^2}$，$F(x)$ 的复合逆即为 $G(x)=\frac{x}{(x^2+3x+1)^2}$，所以有 $[x^n] F(x)=\frac 1n[x^{n-1}] (\frac{x}{G(x)})^n=\frac 1n[x^{n-1}] (x^2+3x+1)^{2n}$。
+移项得到 $x=\dfrac{F(x)}{(F(x)^2+3F(x)+1)^2}$，$F(x)$ 的复合逆即为 $G(x)=\dfrac{x}{(x^2+3x+1)^2}$，所以有 $[x^n] F(x)=\frac 1n[x^{n-1}] (\dfrac{x}{G(x)})^n=\dfrac 1n[x^{n-1}] (x^2+3x+1)^{2n}$。
 
 问题变为求解 $[x^{n-1}] (x^2+3x+1)^{2n}$，我们设 $m=2n,U(x)=T(x)^m,T(x)=x^2+3x+1$。
 
@@ -58,7 +58,7 @@ ku_k+3(k-1)u_{k-1}+(k-2)u_{k-2}=m(3u_{k-1}+2u_{k-2})\\
 u_k=\frac{(3m+3-3k)u_{k-1}+(2m+2-k)u_{k-2}}{k}\\
 $$
 
- 递推即可。当然，直接用二项式定理展开可以得到 $\sum\limits_{j=0}^{2n}\binom{2n}{j}\binom{2n-j}{n-1-2j}3^{n-1-2j}$，也可以 $O(n)$ 计算。
+递推即可。当然，直接用二项式定理展开可以得到 $\sum\limits_{j=0}^{2n}\dbinom{2n}{j}\dbinom{2n-j}{n-1-2j}3^{n-1-2j}$，也可以 $O(n)$ 计算。
 
 ### P7896 『JROI-3』Moke 的游戏
 
@@ -78,9 +78,9 @@ $n\le 5\times 10^6,\mid\{i\mid i>0\land a_i\ne 0\}\mid\le 10$。
 
 求的实际上就是 $[x^n] G(x)^{m}$，即 $[x^{n-m}] (\sum\limits_{i=0}a_iF(x)^i)^m$。
 
-设 $F(x)$ 的复合逆为 $H(x)$，有 $H(x)=\frac{x}{\sum\limits_{i=-1}a_ix^{i+1}}$。
+设 $F(x)$ 的复合逆为 $H(x)$，有 $H(x)=\dfrac{x}{\sum\limits_{i=-1}a_ix^{i+1}}$。
 
-设 $A(x)=(\sum\limits_{i=0}a_ix^i)^m$，我们有 $[x^{n-m}]A(F(x))=\frac{1}{n-m}[x^{n-m-1}]A'(x)(\frac{x}{H(x)})^{n-m}$，又有 $A'(x)=m(\sum\limits_{i=0}a_ix^i)^{m-1}(\sum\limits_{i=1}ia_ix^{i-1})$。
+设 $A(x)=(\sum\limits_{i=0}a_ix^i)^m$，我们有 $[x^{n-m}]A(F(x))=\dfrac{1}{n-m}[x^{n-m-1}]A'(x)(\frac{x}{H(x)})^{n-m}$，又有 $A'(x)=m(\sum\limits_{i=0}a_ix^i)^{m-1}(\sum\limits_{i=1}ia_ix^{i-1})$。
 
 所以答案就是
 
@@ -98,4 +98,3 @@ c_k=[x^k](\sum\limits_{i=0}a_{i-1}x^i)^{n-m}\\
 \sum\limits_{i=0}^{k-1}a_{i-1}(k-i)c_{k-i}=(n-m)\sum\limits_{i=0}^{k-1}(i+1)a_{i}c_{k-1-i}\\
 c_k=\frac{(n-m)\sum\limits_{i=0}^{k-1}(i+1)a_{i}c_{k-1-i}-\sum\limits_{i=0}^{k-2}a_{i}(k-i-1)c_{k-i-1}}{a_{-1}k}
 $$
-
